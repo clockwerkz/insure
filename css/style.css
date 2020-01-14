@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=DM+Serif+Display|Karla&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 10px;
+    font-family: 'DM Serif Display', serif;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Karla', sans-serif; 
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.navbar__logo {
+    flex: 1;
+}
+
+.navbar__logo img {
+    width: 60px;
+}
+
+.navbar__item {
+    list-style: none;
+}
+
+.navbar__link {
+    font-size: 0.9rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
