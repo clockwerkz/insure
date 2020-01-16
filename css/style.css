@@ -7,7 +7,7 @@
 }
 
 body {
-    font-size: 10px;
+    font-size: 12px;
     font-family: 'DM Serif Display', serif;
 }
 
@@ -21,6 +21,7 @@ h1, h2, h3, h4 {
 }
 
 .btn {
+    font-family: 'Karla', sans-serif; 
     text-decoration: none;
     text-transform: uppercase;
     font-size: 0.9rem;
@@ -50,7 +51,9 @@ nav {
 }
 
 .navbar__link {
-    font-size: 0.9rem;
+    color: hsl(216, 30%, 68%);
+    font-family: 'Karla', sans-serif; 
+    font-size: 12px;
     text-decoration: none;
     text-transform: uppercase;
 }
