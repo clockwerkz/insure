@@ -16,7 +16,7 @@
 <body>
   <nav class="container">
     <div class="navbar__logo"> 
-      <img src="images/logo.svg" alt="Insure Logo">
+      <img class="navbar__logo-img" src="images/logo.svg" alt="Insure Logo">
     </div>
     <ul class="navbar">
       <li class="navbar__item"><a class="navbar__link"href="#">How we work</a></li class="nav-item">
@@ -41,21 +41,21 @@
   </section>
   <section class="info">
     <h1 class="info__title">We’re different</h1>
-    <div class="cards">
+    <div class="card__wrapper">
       <div class="card">
-        <img src="images/icon-snappy-process.svg" alt="Lightning Bolt Icon">
+        <img class="card__icon" src="images/icon-snappy-process.svg" alt="Lightning Bolt Icon">
         <h3 class="card__title">Snappy Process</h3>
         <p class="card__description">Our application process can be completed in minutes, not hours. Don’t get 
           stuck filling in tedious forms.</p>
       </div> <!-- .card -->
       <div class="card">
-        <img src="images/icon-affordable-prices.svg" alt="Dollar Sign Icon">
+        <img class="card__icon" src="images/icon-affordable-prices.svg" alt="Dollar Sign Icon">
         <h3 class="card__title">Affordable Prices</h3>
         <p class="card__description">We don’t want you worrying about high monthly costs. Our prices may be low, 
           but we still offer the best coverage possible.</p>
       </div> <!-- .card -->
       <div class="card">
-        <img src="images/icon-people-first.svg" alt="Person Icon">
+        <img class="card__icon" src="images/icon-people-first.svg" alt="Person Icon">
         <h3 class="card__title">People First</h3>
         <p class="card__description">Our plans aren’t full of conditions and clauses to prevent payouts. We make 
           sure you’re covered when you need it.</p>
@@ -63,7 +63,9 @@
     </div> <!-- .cards -->
     <div class="learn-more">
       <h1 class="learn-more__title">Find out more about how we work</h1>
-      <a href="#" class="btn">How we work</a>
+      <div class="learn-more__cta">
+        <a href="#" class="btn btn--inverse">How we work</a>
+      </div>
     </div>
   </section>
 
