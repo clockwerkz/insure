@@ -12,7 +12,7 @@ body {
     overflow-x: hidden;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3 {
     font-family: 'DM Serif Display', serif;
 }
 
@@ -26,12 +26,14 @@ li {
 }
 
 .btn {
+    position: relative;
+    z-index: 3;
     display: inline-block;
     font-family: 'Karla', sans-serif; 
     text-decoration: none;
     text-transform: uppercase;
     font-size: 0.9rem;
-    padding: 0.5rem 1.2rem;
+    padding: 0.75rem 1.5rem;
     border: 2px solid black;
     font-weight: bold;
     color: black;
@@ -39,8 +41,8 @@ li {
 }
 
 .btn--inverse {
-    color: white;
-    border: 2px solid white;
+    color: hsl(217, 70%, 94%);
+    border: 2px solid hsl(217, 70%, 94%);
     
 }
 nav {
@@ -60,10 +62,14 @@ nav {
 
 .navbar__logo {
     flex: 1;
+    display: flex;
+    align-items: center;
 }
 
-.navbar__logo-img {
-    width: 100px;
+.logo-img {
+    display: block;
+    width: 112px;
+    height: 18px;
 }
 
 .navbar__item {
@@ -144,9 +150,11 @@ nav {
 }
 
 .hero__description {
-    font-size: 1.25rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
     font-weight: 200;
     margin: 1rem 0 2rem;
+    padding-right: 1rem;
 }
 
 .info {
@@ -198,13 +206,14 @@ nav {
 .learn-more {
     background-color: hsl(256, 26%, 20%);
     color: white;
-    padding: 3.5rem 5rem;
+    padding: 3.5rem 5rem 4rem;
     display: flex;
     overflow: hidden;
 }
 
 .learn-more__title {
     font-size: 3.5rem;
+    line-height: 3.5rem;
     font-weight: 200;
     flex: 1;
 }
@@ -233,10 +242,43 @@ nav {
 }
 
 footer {
-    padding: 2rem 0;
+    background-color: #fafafa;
+    padding: 4rem 9rem;
+}
+.social-media {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid hsl(273, 4%, 51%);;
 }
 
+.social-media__links {
+    display: flex;
+}
+
+.social-media__link {
+    margin-left: 1rem;
+}
 .footer__wrapper {
     display: flex;
     justify-content: space-between;
+}
+
+.footer__title {
+    margin: 2rem 0;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: hsl(273, 4%, 51%);
+    letter-spacing: 1px;
+}
+.footer__item {
+    margin: 0.9rem 0;
+}
+.footer__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color:  hsl(256, 26%, 20%);
 }
